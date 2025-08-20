@@ -1,0 +1,122 @@
+/* @import "tailwindcss"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Power Grotesk Trial";
+  src: url("../../public/fonts/PowerGroteskTrial-Light.ttf") format('.trueType');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Power Grotesk Trial";
+  src: url("../../public/fonts/PowerGroteskTrial-Regular.ttf") format('.trueType');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Power Grotesk Trial";
+  src: url("../../public/fonts/PowerGroteskTrial-Medium.ttf") format('.trueType');
+  font-weight: 500;
+  font-style: normal;
+}
+/* 
+:root {
+  --background: #000000;
+  --foreground: #FFFFFF;
+} */
+/* 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
+  .page-loader-logo img.clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38.66px;
+    clip-path: inset(100% 0% 0% 0%); /* Initially hidden */
+    animation: revealLogo 3s ease-in forwards;
+  }
+  .page-loader-logo img.default-logo, .page-loader-logo img.clone{
+    height: 90px;
+  }
+  
+  @keyframes revealLogo {
+    0% {
+      clip-path: inset(120% 0% 0% 0%);
+    }
+    10% {
+      clip-path: inset(100% 0% 0% 0%);
+    }
+    50%{
+      clip-path: inset(70% 0% 0% 0%);
+    }
+    100% {
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+
+
+body {
+  background: #000;
+  color: #FFF;
+  font-family: 'Power Grotesk Trial';
+  font-weight: 400;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.left-scroll [data-lenis-scroll] {
+  overscroll-behavior: contain;
+}
+
+.smooth-content {
+  will-change: transform;
+}
+
+.splide__pagination__page{
+  height: 4px !important;
+  width: 12px !important;
+  border-radius: 2px !important;
+  background: #ffffff80 !important;
+}
+
+.splide__pagination__page.is-active{
+  transform: scale(1) !important;
+  background: #FFF !important;
+}
+
+#custom-cursor {
+  mix-blend-mode: difference;
+}
