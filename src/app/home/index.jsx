@@ -222,7 +222,7 @@ const HomePage = () => {
       </section>
 
       <section className="bg-[#060606] pt-[60px] pb-[46px]">
-        <div className="relative w-full h-[300px] h-full">
+        <div className="relative w-full h-[300px]">
           <Image
             src="/images/nurotec-big-text.png"
             alt="Big Text"
