@@ -36,7 +36,8 @@ module.exports = {
       borderRadius: {
       },
       borderColor: {
-        'white-200': 'rgba(255, 255, 255, 0.2)',
+        'white-20': 'rgba(255, 255, 255, 0.2)',
+        'white-10': 'rgba(255, 255, 255, 0.2)',
       },
       spacing: {
         18: '72px',

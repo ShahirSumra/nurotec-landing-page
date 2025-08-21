@@ -37,8 +37,8 @@ const Header = () => {
 
           <div className='flex items-center gap-12'>
             {
-              navLinks.map((item) => (
-                <Link href={item.link} className='text-white-60 text-navlink 2xl:text-[18px] hover:text-white'>{item.label}</Link>
+              navLinks.map((item, index) => (
+                <Link href={item.link} key={index + item.label} className='text-white-60 text-navlink 2xl:text-[18px] hover:text-white'>{item.label}</Link>
               ))
             }
           </div>

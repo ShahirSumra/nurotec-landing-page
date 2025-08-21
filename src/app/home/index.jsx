@@ -55,6 +55,25 @@ const FeturesCards = [
   },
 ]
 
+const navLinks = [
+  {
+    label: 'Home',
+    link: '/'
+  },
+  {
+    label: 'About',
+    link: '/about'
+  },
+  {
+    label: 'Why',
+    link: '/why'
+  },
+  {
+    label: 'Whitepaper',
+    link: '/Whitepaper'
+  },
+]
+
 const HomePage = () => {
 
   return(
@@ -122,11 +141,11 @@ const HomePage = () => {
                     alt=""
                   />
 
-                  <div className="text-features-title-2xl text-white mt-10">{item.title}</div>
+                  <div className="text-features-title-2xl text-white mt-10 max-w-[252px] h-[52px]">{item.title}</div>
                   <Link href={item.link} className="flex items-center gap-2 text-white-50 mt-3.5 hover:text-white">
                     Learn More 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <g clip-path="url(#clip0_1_98)">
+                      <g clipPath="url(#clip0_1_98)">
                         <path d="M11.8769 7.4147L5.20174 0.739632C5.04736 0.585121 4.84126 0.5 4.62151 0.5C4.40175 0.5 4.19566 0.585121 4.04127 0.739632L3.54968 1.23109C3.22981 1.55133 3.22981 2.07182 3.54968 2.39157L9.15501 7.99689L3.54347 13.6084C3.38908 13.7629 3.30383 13.9689 3.30383 14.1885C3.30383 14.4084 3.38908 14.6144 3.54347 14.769L4.03505 15.2604C4.18956 15.4149 4.39553 15.5 4.61529 15.5C4.83504 15.5 5.04114 15.4149 5.19553 15.2604L11.8769 8.5792C12.0317 8.4242 12.1167 8.21725 12.1162 7.99726C12.1167 7.7764 12.0317 7.56958 11.8769 7.4147Z" fill="white" fillOpacity="0.5"/>
                       </g>
                       <defs>
@@ -200,6 +219,39 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="bg-[#060606] pt-[80px] pb-[46px]">
+        <div className="relative w-full h-[300px] h-full">
+          <Image
+            src="/images/nurotec-big-text.png"
+            alt="Big Text"
+            fill
+            className="object-contain" 
+            priority
+          />
+        </div>
+        <div className="border-t border-t-white-10 mb-12"></div>
+        <SiteContainer>
+          <div className="flex items-center justify-between">
+            <Image
+              src="/images/nurotec-white.svg"
+              alt="Big Text"
+              height={17}
+              width={138}
+              className="object-contain" 
+              priority
+            />
+            <div className='flex items-center gap-12'>
+              {
+                navLinks.map((item, index) => (
+                  <Link href={item.link} key={index + item.label} className='text-white-60 text-navlink 2xl:text-[18px] hover:text-white'>{item.label}</Link>
+                ))
+              }
+            </div>
+          </div>
+
+        </SiteContainer>
       </section>
     </main>
   )
