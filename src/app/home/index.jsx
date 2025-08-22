@@ -3,57 +3,9 @@ import Header from "../../components/header";
 import Title from "@/components/title";
 import Image from "next/image";
 import Link from "next/link";
-
-const ProductCards = [
-  {
-    title: 'Nuro chain',
-    description: 'A high-performance blockchain built for speed, scalability, and trustless innovation. Designed to be energy-efficient and future-proof, Nuro Chain is the foundation for next-gen finance, commerce, and AI integration.',
-    icon: '/images/link.png'
-  },
-  {
-    title: 'Nuro Wallet',
-    description: 'Your secure digital vault. The Nuro Wallet combines ease-of-use with next-gen security, giving you control over digital assets, loyalty rewards, and cross-chain tokens, all in one intuitive interface.',
-    icon: '/images/link.png'
-  },
-  {
-    title: 'Nuro Pay',
-    description: 'Revolutionizing payments. Nuro Pay enables merchants and users to transact instantly with fiat or crypto, anywhere in the world. Secure, low-fee, and global by design.',
-    icon: '/images/link.png'
-  },
-]
-
-const FeturesCards = [
-  {
-    title: 'Autonomous Demand Engine (ADE)',
-    icon: '/images/link-white.svg',
-    link: '/'
-  },
-{
-    title: 'Next Gen AI Wallet',
-    icon: '/images/link-white.svg',
-    link: '/'
-  },
-  {
-    title: 'Sound Digital Money (SDM):',
-    icon: '/images/link-white.svg',
-    link: '/'
-  },
-  {
-    title: 'Deflation and Scarcity Mechanisms',
-    icon: '/images/link-white.svg',
-    link: '/'
-  },
-  {
-    title: 'Protocol-Based Loyalty',
-    icon: '/images/link-white.svg',
-    link: '/'
-  },
-  {
-    title: 'NuroPay Payment Gateway',
-    icon: '/images/link-white.svg',
-    link: '/'
-  },
-]
+import Marquee from "react-fast-marquee";
+import ProductCards from "./productCards";
+import Features from "./features";
 
 const navLinks = [
   {
@@ -87,97 +39,42 @@ const HomePage = () => {
             and Intelligence is Decentralized
           </Title>
 
-          <div className="text-description-xl text-white-60 text-center mt-5 max-w-[664px] mx-auto">
+          <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] text-white-60 text-center mt-5 xl:max-w-[664px] 3xl:max-w-[725px] mx-auto">
             A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.
           </div>
 
           <button
-            className="rounded-[8px] bg-[linear-gradient(105deg,#0BC9FD_-58.58%,#25D7F7_3.62%,#2882F0_65.83%)] text-button-2xl py-3.5 px-10 mt-10"
+            className="rounded-[8px] text-button xl:text-[14px] 3xl:text-[20px] 
+            py-3 px-8 xl:py-3.5 xl:px-10 3xl:py-4.5 3xl:px-11 mt-10 3xl:mt-14
+            bg-[linear-gradient(105deg,#0BC9FD_-58.58%,#25D7F7_3.62%,#2882F0_65.83%)]
+            bg-[length:200%_200%] transition-all duration-200
+            hover:animate-gradientFlow"
           >
             Launch App
           </button>
         </SiteContainer>
       </section>
 
-      <section className="pt-[130px] pb-[110px]">
+      <ProductCards />
+
+      <Features />
+
+      <section className="pb-[80px] xl:pb-[90px] 2xl:pb-[110px] 3xl:pb-[130px]">
         <SiteContainer>
-          <Title>
-            Bringing the utilities <br /> that matters.
-          </Title>
-
-          <div className="flex gap-5 mt-10">
-            {
-              ProductCards.map((item, index) => (
-                <div className="bg-[url('/images/product-card-bg.png')] bg-[length:100%_100%] h-[320px] w-full flex flex-col items-center justify-center p-8" key={index  +  item.title}>
-                  <Image 
-                    src={item.icon}
-                    height={50}
-                    width={50}
-                    alt={item.title}
-                  />
-
-                  <div className="mt-10 mb-3.5 text-product-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent [-webkit-text-fill-color:transparent]">{item.title}</div>
-
-                  <div className="text-product-description-2xl text-white-50 text-center">{item.description}</div>
-                </div>
-              ))
-            }
-          </div>
-        </SiteContainer>
-      </section>
-
-      <section className="py-[114px]">
-        <SiteContainer>
-          <Title>Guarding What Matters Most</Title>
-
-          <div className="grid grid-cols-3 gap-5 mt-10">
-            {
-              FeturesCards.map((item, i) => (
-                <div className="bg-[url('/images/features-card-bg.png')] rounded-[18px] bg-[length:100%_100%] px-[30px] py-[38px]" key={item.title + i}>
-                  <Image 
-                    src={item.icon}
-                    height={36}
-                    width={36}
-                    alt=""
-                  />
-
-                  <div className="text-features-title-2xl text-white mt-10 max-w-[252px] h-[52px]">{item.title}</div>
-                  <Link href={item.link} className="flex items-center gap-2 text-white-50 mt-3.5 hover:text-white">
-                    Learn More 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <g clipPath="url(#clip0_1_98)">
-                        <path d="M11.8769 7.4147L5.20174 0.739632C5.04736 0.585121 4.84126 0.5 4.62151 0.5C4.40175 0.5 4.19566 0.585121 4.04127 0.739632L3.54968 1.23109C3.22981 1.55133 3.22981 2.07182 3.54968 2.39157L9.15501 7.99689L3.54347 13.6084C3.38908 13.7629 3.30383 13.9689 3.30383 14.1885C3.30383 14.4084 3.38908 14.6144 3.54347 14.769L4.03505 15.2604C4.18956 15.4149 4.39553 15.5 4.61529 15.5C4.83504 15.5 5.04114 15.4149 5.19553 15.2604L11.8769 8.5792C12.0317 8.4242 12.1167 8.21725 12.1162 7.99726C12.1167 7.7764 12.0317 7.56958 11.8769 7.4147Z" fill="white" fillOpacity="0.5"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_98">
-                          <rect width="15" height="15" fill="white" transform="translate(0.210022 0.5)"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </Link>
-                </div>
-              ))
-            }
-          </div>
-        </SiteContainer>
-      </section>
-
-      <section className="pb-[110px]">
-        <SiteContainer>
-          <div className="flex gap-[100px] justify-between">
-            <div className="max-w-[485px]">
+          <div className="flex xl:gap-[100px] gap-[60px] 3xl:gap-[120px] justify-between flex-col md:flex-row">
+            <div className="2xl:max-w-[485px] 3xl:max-w-[600px]">
               <Image 
                 src="/images/link-image.png"
                 height={135}
                 width={255}
                 alt=""
-                className="mb-[68px]"
+                className="mb-11 xl:mb-[58px] 2xl:mb-[68px] 3xl:mb-[78px] h-[100px] w-[167px] xl:h-[120px] xl:w-[226px] 2xl:h-[135px] 2xl:w-[255px] 3xl:h-[155px] 3xl:w-[292.7px]"
               />
-              <div className="text-cross-chain-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
+              <div className="text-cross-chain-title md:text-cross-chain-title-md xl:text-cross-chain-title-xl 2xl:text-cross-chain-title-2xl 3xl:text-cross-chain-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
                 Seamless cross chain functionalities with other chains
               </div>
 
-              <div className="text-description-xl max-w-[430px] text-white-60 mt-4">
+              <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] max-w-[430px] text-white-60 mt-4">
                 A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.
               </div>
             </div>
@@ -187,42 +84,49 @@ const HomePage = () => {
               height={538}
               width={684}
               alt=""
+              className="w-full h-auto md:w-[300px] md:h-[260px] xl:h-auto xl:w-auto"
             />
           </div>
         </SiteContainer>
       </section>
 
-      <section className="py-[110px] overflow-x-hidden">
-        <div className="-ml-10 text-big-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">WE SHAPE THE FUTURE</div>
-        <div className="text-right -mr-[100px] text-big-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">INNOVATION & EXCELLENCE</div>
+      <section className="py-[80px] xl:py-[90px] 2xl:py-[110px] 3xl:py-[130px] overflow-x-hidden">
+        <Marquee direction="right">
+          <div className="text-big-title md:text-big-title-md xl:text-big-title-xl 2xl:text-big-title-2xl 3xl:text-big-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent flex items-center">WE SHAPE THE FUTURE <div className="opacity-0">--</div> WE SHAPE THE FUTURE <div className="opacity-0">--</div></div>
+        </Marquee>
+        <Marquee>
+          <div className="text-big-title md:text-big-title-md xl:text-big-title-xl 2xl:text-big-title-2xl 3xl:text-big-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent flex items-center">INNOVATION & EXCELLENCE <div className="opacity-0">--</div> INNOVATION & EXCELLENCE <div className="opacity-0">--</div></div>
+        </Marquee>
       </section>
 
-      <section className="pt-[110px] pb-[220px]">
-        <div className="flex items-center gap-20">
+      <section className="pt-[80px] pb-[80px] xl:pb-[160px] xl:pt-[90px] xl:pb-[180px] 2xl:pt-[110px] 2xl:pb-[220px] 3xl:pt-[130px] 3xl:pb-[260px] ">
+        <div className="flex items-center gap-12 xl:gap-16 2xl:gap-20 3xl:gap-[120px] flex-col md:flex-row">
           <Image 
             src="/images/sheild.png"
             height={422}
             width={701}
             alt=""
+            className="w-full md:h-[340px] md:w-[564px] xl:h-[380px] xl:w-[631px] 2xl:h-[422px] 2xl:w-[701px] 3xl:h-[480px] 3xl:w-[798px]"
           />
 
-          <div className="max-w-[559px]">
+          <div className="max-w-[559px] px-4 xl:px-0">
             <Image 
               src="/images/nurolink-icon.png"
               height={91}
               width={91}
               alt=''
+              className="h-14 w-14 xl:h-16 xl:w-16 2xl:h-[91px] 2xl:w-[91px] 3xl:h-[110px] 3xl:w-[110px]"
             />
-            <div className="text-cross-chain-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent mt-[68px]">AI-Driven Security for Unmatched Protection</div>
-            <div className="text-description-xl max-w-[430px] text-white-60 mt-4">
+            <div className="text-cross-chain-title md:text-cross-chain-title-md xl:text-cross-chain-title-xl 2xl:text-cross-chain-title-2xl 3xl:text-cross-chain-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent mt-10 xl:mt-12 2xl:mt-[68px]">AI-Driven Security for Unmatched Protection</div>
+            <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] max-w-[430px] text-white-60 mt-4">
               Smart, adaptive, and autonomous: Nurotek’s AI-powered defense anticipates threats before they happen. Backed by decentralized blockchain security, your assets and transactions stay protected at every layer.
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#060606] pt-[60px] pb-[46px]">
-        <div className="relative w-full h-[300px]">
+      <section className="bg-[#090909] pt-11 xl:pt-12 2xl:pt-[60px] 3xl:pt-[70px] pb-8 xl:pb-[44px] 3xl:pb-[54px]">
+        <div className="relative w-full h-[110px] md:h-[200px] xl:h-[280px] 2xl:h-[320px] 3xl:h-[375px] flex items-center justify-center">
           <Image
             src="/images/nurotec-big-text.png"
             alt="Big Text"
@@ -231,9 +135,10 @@ const HomePage = () => {
             priority
           />
         </div>
-        <div className="border-t border-t-white-10 mb-12"></div>
+
+        <div className="border-t border-t-white-10 mb-8 xl:mb-10 2xl:mb-12 3xl:mb-14"></div>
         <SiteContainer>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between flex-col md:flex-row">
             <Image
               src="/images/nurotec-white.svg"
               alt="Big Text"
@@ -242,10 +147,10 @@ const HomePage = () => {
               className="object-contain" 
               priority
             />
-            <div className='flex items-center gap-12'>
+            <div className='flex items-center gap-6 xl:gap-10 2xl:gap-12 mt-10 md:mt-0'>
               {
                 navLinks.map((item, index) => (
-                  <Link href={item.link} key={index + item.label} className='text-white-60 text-navlink 2xl:text-[18px] hover:text-white'>{item.label}</Link>
+                  <Link href={item.link} key={index + item.label} className='text-white-60 text-navlink xl:text-[16px] 2xl:text-[18px] hover:text-white'>{item.label}</Link>
                 ))
               }
             </div>

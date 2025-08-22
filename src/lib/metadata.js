@@ -1,7 +1,7 @@
 
 export const metaData = {
   metadataBase: new URL("https://spirit-landing-page.vercel.app/"),
-  title: 'Nurotec',
+  title: 'NUROTEK',
   description: 'A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.',
   keywords: [],
   authors: [
@@ -16,14 +16,14 @@ export const metaData = {
     type: "website",
     locale: "en_US",
     url: '',
-    title: 'Nurotec',
+    title: 'NUROTEK',
     description: 'A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.',
-    siteName: 'Spirit Blockchain',
+    siteName: 'NUROTEK',
     images: ``,
   },
   twitter: {
     card: "summary_large_image",
-    title: 'Nurotec',
+    title: 'NUROTEK',
     description: 'A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.',
     images: [
       ``,
@@ -32,8 +32,8 @@ export const metaData = {
   },
 
   icons: {
-    // icon: "/favicon.ico",
-    // shortcut: "/favicon.ico",
-    // apple: "/favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 }
