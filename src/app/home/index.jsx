@@ -59,7 +59,7 @@ const HomePage = () => {
 
       <Features />
 
-      <section className="pb-[80px] xl:pb-[90px] 2xl:pb-[110px] 3xl:pb-[130px]">
+      {/* <section className="pb-[80px] xl:pb-[90px] 2xl:pb-[110px] 3xl:pb-[130px]">
         <SiteContainer>
           <div className="flex xl:gap-[100px] gap-[60px] 3xl:gap-[120px] justify-between flex-col md:flex-row">
             <div className="2xl:max-w-[485px] 3xl:max-w-[600px]">
@@ -88,45 +88,41 @@ const HomePage = () => {
             />
           </div>
         </SiteContainer>
-      </section>
+      </section> */}
 
-      <section className="pb-[80px] xl:pb-[90px] 2xl:pb-[110px] 3xl:pb-[130px]">
-        <SiteContainer>
-          <div className="xl:gap-[220px] gap-[60px] 3xl:gap-[320px] md:flex md:items-center">
-            <div className="2xl:max-w-[485px] 3xl:max-w-[600px] md:w-50">
-              <Image 
-                src="/images/wallet.png"
-                height={144}
-                width={116}
-                alt=""
-                className="mb-11 xl:mb-[58px] 2xl:mb-[68px] 3xl:mb-[78px] h-[90.58px] w-[78px] xl:h-[124px] xl:w-[96px] 2xl:h-[144px] 2xl:w-[116px] 3xl:h-[215.5px] 3xl:w-[174px]"
-              />
-              <div className="text-cross-chain-title md:text-cross-chain-title-md xl:text-cross-chain-title-xl 2xl:text-cross-chain-title-2xl 3xl:text-cross-chain-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
-                Payment Gateway
-              </div>
-
-              <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] max-w-[430px] text-white-60 mt-4">
-                Nurotek doesn’t lock you in. Our protocol is natively interoperable with leading chains, so you can transfer assets, settle payments, and deploy apps across ecosystems without friction.
-              </div>
-            </div>
-
+      <section className="lg:border-y lg:border-y-white-20 flex w-full flex lg:flex-row flex-col">
+        <div className="xl:w-[50%] lg:border-r lg:border-r-white-20 px-4 md:px-[70px] 3xl:px-[140px] md:py-[60px] py-10">
+          <div className="lg:h-[160px] lg:w-[160px] 2xl:h-[194px] 2xl:w-[194px] flex items-center">
             <Image 
               src="/images/PG.png"
-              height={334}
-              width={522}
-              className="w-full h-auto 
-                        max-w-[320px]
-                        md:max-w-[300px] 
-                        xl:max-w-[424px] 
-                        2xl:max-w-[522px] 
-                        3xl:max-w-[680px]
-                        mt-10 md:mt-0
-                        "
+              height={103}
+              width={155}
+              alt=""
+              className="h-auto w-[100px] xl:w-[130px] 2xl:w-[155px]"
             />
-            {/* <div className="flex justify-center md:w-50">
-            </div> */}
           </div>
-        </SiteContainer>
+          
+          <div className="pt-10 text-payment-gateway-title xl:text-payment-gateway-title-xl 2xl:text-payment-gateway-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent w-fit">Payment Gateway</div>
+
+          <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] max-w-[560px] 3xl:max-w-[660px] text-white-60 mt-4">Nurotek doesn’t lock you in. Our protocol is natively interoperable with leading chains, so you can transfer assets, settle payments, and deploy apps across ecosystems without friction.</div>
+        </div>
+        <div className="xl:w-[50%] xl:px-[70px] 3xl:px-[140px] px-4 md:px-[70px] py-[60px]">
+          <div className="lg:h-[160px] lg:w-[160px] 2xl:h-[194px] 2xl:w-[194px] flex items-center">
+            <Image 
+              src="/images/wallet.png"
+              height={156}
+              width={126}
+              alt=""
+              className="h-auto w-[76px] xl:w-[100px] 2xl:w-[126px] rotate-[30deg] ml-4 lg:ml-0"
+            />
+          </div>
+          
+          <div className="pt-10 text-payment-gateway-title xl:text-payment-gateway-title-xl 2xl:text-payment-gateway-title-2xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent w-fit">Wallet</div>
+
+          <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] max-w-[560px] 3xl:max-w-[660px] text-white-60 mt-4">
+            Nurotek doesn’t lock you in. Our protocol is natively interoperable with leading chains, so you can transfer assets, settle payments, and deploy apps across ecosystems without friction.
+          </div>
+        </div>
       </section>
 
       <section className="py-[80px] xl:py-[90px] 2xl:py-[110px] 3xl:py-[130px] overflow-x-hidden">
@@ -141,7 +137,7 @@ const HomePage = () => {
       <section className="pt-[80px] pb-[80px] xl:pb-[160px] xl:pt-[90px] xl:pb-[180px] 2xl:pt-[110px] 2xl:pb-[220px] 3xl:pt-[130px] 3xl:pb-[260px] ">
         <div className="flex items-center gap-12 md:gap-8 xl:gap-16 2xl:gap-20 3xl:gap-[120px] flex-col md:flex-row">
           <Image 
-            src="/images/sheild.png"
+            src="/images/sheild-1.jpg"
             height={422}
             width={701}
             alt=""

@@ -12,6 +12,7 @@ module.exports = {
       '3xl': '1800px',
       '2xl': '1536px',
       'xl': '1200px',
+      'lg': '992px',
       'md': '768px',
     },
     extend: {
@@ -76,6 +77,10 @@ module.exports = {
         'big-title-xl': ['72px', { letterSpacing: '-0.72x', }],
         'big-title-2xl': ['100px', { letterSpacing: '-1px', }],
         'big-title-3xl': ['144px', { letterSpacing: '-1.44px', }],
+        'payment-gateway-title': ['24px', { lineHeight: '', fontWeight: '', letterSpacing: '0.24px' }],
+        'payment-gateway-title-xl': ['28px', { letterSpacing: '-0.28px' }],
+        'payment-gateway-title-2xl': ['30px', { letterSpacing: '-0.3px' }],
+        'payment-gateway-title-3xl': ['32px', { letterSpacing: '-0.32px' }],
         
       },
       keyframes: {
