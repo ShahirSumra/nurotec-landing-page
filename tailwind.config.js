@@ -24,7 +24,8 @@ module.exports = {
         'white-50': 'rgba(255, 255, 255, 0.5)',
         'white-800': 'rgba(255, 255, 255, 0.8)',
         'white-070': 'rgba(255, 255, 255, 0.07)',
-        'primary': '#65e18f'
+        'primary': '#65e18f',
+        'blue': '#2E689D',
       },
       backgroundColor: {
         'blue': '#10367E',
@@ -40,6 +41,7 @@ module.exports = {
       borderColor: {
         'white-20': 'rgba(255, 255, 255, 0.2)',
         'white-10': 'rgba(255, 255, 255, 0.1)',
+        'blue': '#2E689D',
       },
       spacing: {
         18: '72px',
@@ -51,10 +53,10 @@ module.exports = {
       fontSize: {
         'navlink': ['14px', { lineHeight: '130%', fontWeight: 300 }],
         'description': ['12px', { lineHeight: '140%', fontWeight: 300 }],
-        'main-title': ['36px', { lineHeight: '110%', fontWeight: 500, letterSpacing: "-0.36px" }],
-        'main-title-md': ['48px', { letterSpacing: "-0.48px" }],
-        'main-title-xl': ['54px', { letterSpacing: "-0.54px" }],
-        'main-title-2xl': ['60px', { letterSpacing: "-0.6px" }],
+        'main-title': ['32px', { lineHeight: '110%', fontWeight: 500, letterSpacing: "-0.32px" }],
+        'main-title-md': ['44px', { letterSpacing: "-0.44px" }],
+        'main-title-xl': ['48px', { letterSpacing: "-0.48px" }],
+        'main-title-2xl': ['52px', { letterSpacing: "-0.52px" }],
         'main-title-3xl': ['72px', { letterSpacing: "-0.72px" }],
         'button': ['14px', { lineHeight: '130%', fontWeight: 500 }],
         'product-title': ['20px', { letterSpacing: '-0.20px', fontWeight: 500, lineHeight: '110%' }],
@@ -77,11 +79,16 @@ module.exports = {
         'big-title-xl': ['72px', { letterSpacing: '-0.72x', }],
         'big-title-2xl': ['100px', { letterSpacing: '-1px', }],
         'big-title-3xl': ['144px', { letterSpacing: '-1.44px', }],
-        'payment-gateway-title': ['24px', { lineHeight: '', fontWeight: '', letterSpacing: '0.24px' }],
-        'payment-gateway-title-xl': ['28px', { letterSpacing: '-0.28px' }],
-        'payment-gateway-title-2xl': ['30px', { letterSpacing: '-0.3px' }],
-        'payment-gateway-title-3xl': ['32px', { letterSpacing: '-0.32px' }],
-        
+        'wallet-nuropay-title': ['24px', { letterSpacing: '-0.24px', fontWeight: 500, lineHeight: '110%' }],
+        'wallet-nuropay-title-md': ['32px', { letterSpacing: '-0.32px' }],
+        'wallet-nuropay-title-xl': ['36px', { letterSpacing: '-0.36px' }],
+        'wallet-nuropay-title-2xl': ['40px', { letterSpacing: '-0.4px' }],
+        'wallet-nuropay-title-3xl': ['44px', { letterSpacing: '-0.44px' }],
+        'pointer-label': ['16px', { letterSpacing: '-0.16px', fontWeight: '500', lineHeight: '110%' }],
+        'pointer-label-xl': ['18px', { letterSpacing: '-0.18px' }],
+        'pointer-label-2xl': ['20px', { letterSpacing: '-0.2px' }],
+        'pointer-label-3xl': ['22px', { letterSpacing: '-0.22px' }],
+        'pointer-description': ['12px', { lineHeight: '150%', fontWeight: 300 }]
       },
       keyframes: {
         gradientFlow: {

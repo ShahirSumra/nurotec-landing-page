@@ -5,19 +5,19 @@
 
 @font-face {
   font-family: "Power Grotesk Trial";
-  src: url("../../public/fonts/PowerGroteskTrial-Light.ttf") format('.trueType');
+  src: url("../../public/fonts/PowerGroteskTrial-Light.ttf") format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Power Grotesk Trial";
-  src: url("../../public/fonts/PowerGroteskTrial-Regular.ttf") format('.trueType');
+  src: url("../../public/fonts/PowerGroteskTrial-Regular.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Power Grotesk Trial";
-  src: url("../../public/fonts/PowerGroteskTrial-Medium.ttf") format('.trueType');
+  src: url("../../public/fonts/PowerGroteskTrial-Medium.ttf") format('truetype');
   font-weight: 500;
   font-style: normal;
 }

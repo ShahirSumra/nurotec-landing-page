@@ -60,9 +60,9 @@ import Image from "next/image";
 import SiteContainer from "./SiteContainer";
 
 const navLinks = [
-  { label: "Home", link: "/" },
-  { label: "About", link: "/about" },
-  { label: "Why", link: "/why" },
+  { label: "Home", link: "/#home" },
+  // { label: "About", link: "/about" },
+  // { label: "Why", link: "/why" },
   { label: "Whitepaper", link: "/Whitepaper" },
 ];
 

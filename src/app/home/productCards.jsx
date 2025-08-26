@@ -11,19 +11,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProductCard = [
   {
-    title: 'Nuro chain',
-    description: 'A high-performance blockchain built for speed, scalability, and trustless innovation. Designed to be energy-efficient and future-proof, Nuro Chain is the foundation for next-gen finance, commerce, and AI integration.',
+    title: 'Nuro Chain',
+    description: 'A high-performance blockchain with cross-chain interoperability built for speed, scalability, and trustless innovation. Designed to be energy-efficient and future-proof, NuroChain is where finance, borderless commerce, and AI-driven innovation converge to form a cutting-edge digital infrastructure.',
     icon: '/images/link.png'
   },
   {
     title: 'Nuro Wallet',
-    description: 'Your secure digital vault. The Nuro Wallet combines ease-of-use with next-gen security, giving you control over digital assets, loyalty rewards, and cross-chain tokens, all in one intuitive interface.',
-    icon: '/images/link.png'
+    description: 'NuroWallet is the self-custodied, AI-driven portal to modern finance, seamlessly uniting ease-of-use, next-gen functionality, security, with total control over assets, payments, rewards, and cross-chain transactions in a single platform.',
+    icon: '/images/nuro-wallet.png'
   },
   {
     title: 'Nuro Pay',
-    description: 'Revolutionizing payments. Nuro Pay enables merchants and users to transact instantly with fiat or crypto, anywhere in the world. Secure, low-fee, and global by design.',
-    icon: '/images/link.png'
+    description: 'Revolutionizing payments. NuroPay empowers merchants and users to transact instantly with fiat or crypto, anywhere in the world. Secure, low-fee, and global by design with a customizable loyalty program offering unprecedented rewards benefiting both merchants and users.',
+    icon: '/images/credit-card.png'
   },
 ]
 
@@ -48,9 +48,15 @@ const ProductCards = () => {
   return(
     <section className="py-[80px] xl:py-[90px] 2xl:py-[110px] 3xl:py-[130px]">
       <SiteContainer>
-        <Title>
-          Bringing the utilities <br /> that matters.
-        </Title>
+        <div className="max-w-[900px] mx-auto text-center">
+          <Title>
+            The Ecosystem That Empowers You With Every Action
+          </Title>
+
+          <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] text-white-60 mt-4">
+            The Ecosystem That Will Shape Tomorrow, Brought to You Today
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-10">
           {ProductCard.map((item, index) => (
