@@ -13,6 +13,7 @@ const HeroSection = () => {
         muted 
         loop 
         playsInline 
+        controls={false}
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src="/images/hero-bg-video.mp4" type="video/mp4" />
