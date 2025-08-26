@@ -3,7 +3,7 @@ import Image from "next/image";
 const DefenseSection = () => {
 
   return(
-    <section className="py-[60px] xl:pb-[160px] xl:pt-[90px] xl:pb-[180px] 2xl:pt-[110px] 2xl:pb-[220px] 3xl:pt-[130px] 3xl:pb-[260px] ">
+    <section className="py-[70px] xl:pb-[160px] xl:pt-[90px] xl:pb-[180px] 2xl:pt-[110px] 2xl:pb-[220px] 3xl:pt-[130px] 3xl:pb-[260px] ">
       <div className="flex items-center gap-12 md:gap-8 xl:gap-16 2xl:gap-20 3xl:gap-[120px] flex-col lg:flex-row">
         <Image 
           src="/images/sheild-1.jpg"

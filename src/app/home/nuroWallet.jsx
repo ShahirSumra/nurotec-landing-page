@@ -75,14 +75,14 @@ const NuroWallet = () => {
           className="h-auto w-[50px] sm:w-[50px] md:w-[56px] xl:w-[82px] 2xl:w-[91px] 3xl:w-[106px]"
         />
         
-        <div className="mt-4 md:mt-10 mb-6 md:mb-8 lg:mb-10 w-fit max-w-[600px] text-wallet-nuropay-title md:text-wallet-nuropay-title-md xl:text-wallet-nuropay-title-xl 2xl:text-wallet-nuropay-title-2xl 3xl:text-wallet-nuropay-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
+        <div className="mt-4 md:mt-10 mb-10 lg:mb-12 w-fit max-w-[600px] text-wallet-nuropay-title md:text-wallet-nuropay-title-md xl:text-wallet-nuropay-title-xl 2xl:text-wallet-nuropay-title-2xl 3xl:text-wallet-nuropay-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
           NuroWallet: The All-in-One Wallet for Digital Finance that Thinks With You
         </div>
 
         <div 
           ref={scrollBoxRef} 
           className="flex-1 overflow-hidden pr-2 md:pr-4
-            max-h-[calc(100vh-460px)]    
+            max-h-[calc(100vh-480px)]    
             md:max-h-[calc(100vh-500px)] 
             lg:max-h-[calc(100vh-360px)]
           "
@@ -91,7 +91,7 @@ const NuroWallet = () => {
             {pointers.map((item, ind) => (
               <div key={ind + item.label} className="mb-6 md:mb-10">
                 <div className="flex gap-2 text-pointer-label xl:text-pointer-label-xl 2xl:text-pointer-label-2xl 3xl:text-pointer-label-3xl w-fit bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
-                  <span className="h-1 w-1 rounded-full bg-white mt-[7px] md:mt-2 shrink-0" /> {item.label}
+                  {item.label}
                 </div>
                 <div className="text-pointer-description md:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[20px] text-white-60 mt-2 md:mt-2.5">
                   {item.description}
