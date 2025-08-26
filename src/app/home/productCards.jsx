@@ -46,7 +46,7 @@ const ProductCards = () => {
   }, []);
 
   return(
-    <section className="py-[80px] xl:py-[90px] 2xl:py-[110px] 3xl:py-[130px]">
+    <section className="py-[60px] xl:py-[90px] 2xl:py-[110px] 3xl:py-[130px]">
       <SiteContainer>
         <div className="max-w-[900px] mx-auto text-center">
           <Title>

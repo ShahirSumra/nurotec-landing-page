@@ -56,23 +56,23 @@ const NuroWallet = () => {
       ref={sectionRef} 
       className="h-screen flex w-full flex-col lg:flex-row lg:border-y lg:border-white/20"
     >
-      <div className="lg:xl:w-[50%] lg:border-r lg:border-white/20 px-4 md:px-[70px] 3xl:px-[140px] py-4 lg:py-[60px] flex items-center">
+      <div className="lg:xl:w-[50%] lg:border-r lg:border-white/20 px-4 md:px-[70px] 3xl:px-[140px] py-4 lg:py-[60px] flex items-center lg:justify-center">
         <Image 
-          src="/images/wallet-2.png"
+          src="/images/wallet.jpg"
           height={468}
           width={468}
           alt=""
-          className="h-auto w-[160px] md:w-[200px] lg:w-[220px] xl:w-[340px] 2xl:w-[468px] 3xl:w-[540px]"
+          className="h-auto w-[240px] md:w-[200px] lg:w-[220px] xl:w-[360px] 2xl:w-[468px] 3xl:w-[540px]"
         />
       </div>
 
-      <div className="lg:xl:w-[50%] xl:px-[70px] 3xl:px-[140px] px-4 md:px-[70px] py-4 lg:py-[60px] flex flex-col">
+      <div className="lg:xl:w-[50%] xl:px-[70px] 3xl:px-[140px] px-4 md:px-[70px] pb-4 lg:py-[60px] flex flex-col">
         <Image 
           src="/images/wallet-box.png"
           height={91}
           width={91}
           alt=""
-          className="h-auto w-[40px] sm:w-[50px] md:w-[56px] xl:w-[82px] 2xl:w-[91px] 3xl:w-[106px] hidden lg:flex"
+          className="h-auto w-[50px] sm:w-[50px] md:w-[56px] xl:w-[82px] 2xl:w-[91px] 3xl:w-[106px]"
         />
         
         <div className="mt-4 md:mt-10 mb-6 md:mb-8 lg:mb-10 w-fit max-w-[600px] text-wallet-nuropay-title md:text-wallet-nuropay-title-md xl:text-wallet-nuropay-title-xl 2xl:text-wallet-nuropay-title-2xl 3xl:text-wallet-nuropay-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
@@ -82,16 +82,16 @@ const NuroWallet = () => {
         <div 
           ref={scrollBoxRef} 
           className="flex-1 overflow-hidden pr-2 md:pr-4
-            max-h-[calc(100vh-360px)]    
+            max-h-[calc(100vh-460px)]    
             md:max-h-[calc(100vh-500px)] 
             lg:max-h-[calc(100vh-360px)]
           "
         >
-          <div ref={scrollContentRef} className="pb-6 md:pb-10">
+          <div ref={scrollContentRef}>
             {pointers.map((item, ind) => (
               <div key={ind + item.label} className="mb-6 md:mb-10">
-                <div className="text-pointer-label xl:text-pointer-label-xl 2xl:text-pointer-label-2xl 3xl:text-pointer-label-3xl w-fit bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
-                  {item.label}
+                <div className="flex gap-2 text-pointer-label xl:text-pointer-label-xl 2xl:text-pointer-label-2xl 3xl:text-pointer-label-3xl w-fit bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
+                  <span className="h-1 w-1 rounded-full bg-white mt-[7px] md:mt-2 shrink-0" /> {item.label}
                 </div>
                 <div className="text-pointer-description md:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[20px] text-white-60 mt-2 md:mt-2.5">
                   {item.description}
