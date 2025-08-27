@@ -7,10 +7,10 @@ const navLinks = [
     label: 'Home',
     link: '/#home'
   },
-  {
-    label: 'Whitepaper',
-    link: '/Whitepaper'
-  },
+  // {
+  //   label: 'Whitepaper',
+  //   link: '/Whitepaper'
+  // },
 ]
 
 const Footer = () => {
