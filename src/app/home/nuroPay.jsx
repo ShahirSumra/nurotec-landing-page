@@ -42,7 +42,7 @@ const NuroPay = () => {
   const pointers = [
     { label: 'Fast Onboarding Across Industries', description: 'Get started quickly with seamless integration tailored to any sector or business model.' },
     { label: 'Accepts Debit, Credit, Crypto & ACH', description: 'One gateway for every transaction method, seamlessly bridging traditional and digital payments.' },
-    { label: 'Chargeback-Prevention by Design', description: 'Advanced fraud protection and dispute management keep merchants secure and profitable.' },
+    { label: 'Chargeback-Prevention by Design', description: 'Advanced fraud protection and dispute management keep merchants secure and profitable. Crypto <> Fiat Conversion Convert between crypto and fiat, enabling borderless payments in any currency.' },
     { label: 'Off-Chain Speed, On-Chain Transparency', description: 'Lightning-fast off-chain payments fully tracked and verifiable on-chain.' },
     { label: 'Customizable Next-Gen Loyalty Program', description: 'Tailor rewards with never-before-seen benefits that empower both merchants and customers.' },
     { label: 'Deflationary Loyalty Points', description: 'Every transaction earns loyalty rewards that gain value over time, creating lasting customer engagement.' },

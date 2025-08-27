@@ -79,7 +79,7 @@ const NuroAi = () => {
         />
         
         <div className="mt-4 md:mt-10 mb-10 lg:mb-12 w-fit max-w-[600px] text-wallet-nuropay-title md:text-wallet-nuropay-title-md xl:text-wallet-nuropay-title-xl 2xl:text-wallet-nuropay-title-2xl 3xl:text-wallet-nuropay-title-3xl bg-[linear-gradient(172deg,#FFF_50.59%,#2E689D_111.17%)] bg-clip-text text-transparent">
-          NuroAI - The Intelligent Financial Agent of the Future
+          NuroAI The Intelligent Financial Agent of the Future
         </div>
 
         <div 

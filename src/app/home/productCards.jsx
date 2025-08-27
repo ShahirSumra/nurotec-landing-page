@@ -11,17 +11,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProductCard = [
   {
-    title: 'Nuro Chain',
+    title: 'NuroChain',
     description: 'A high-performance blockchain with cross-chain interoperability built for speed, scalability, and trustless innovation. Designed to be energy-efficient and future-proof, NuroChain is where finance, borderless commerce, and AI-driven innovation converge to form a cutting-edge digital infrastructure.',
     icon: '/images/link.png'
   },
   {
-    title: 'Nuro Wallet',
+    title: 'NuroWallet',
     description: 'NuroWallet is the self-custodied, AI-driven portal to modern finance, seamlessly uniting ease-of-use, next-gen functionality, security, with total control over assets, payments, rewards, and cross-chain transactions in a single platform.',
     icon: '/images/nuro-wallet.png'
   },
   {
-    title: 'Nuro Pay',
+    title: 'NuroPay',
     description: 'Revolutionizing payments. NuroPay empowers merchants and users to transact instantly with fiat or crypto, anywhere in the world. Secure, low-fee, and global by design with a customizable loyalty program offering unprecedented rewards benefiting both merchants and users.',
     icon: '/images/credit-card.png'
   },
