@@ -63,7 +63,7 @@ const navLinks = [
   { label: "Home", link: "/#home" },
   // { label: "About", link: "/about" },
   // { label: "Why", link: "/why" },
-  { label: "Whitepaper", link: "/Whitepaper" },
+  // { label: "Whitepaper", link: "/Whitepaper" },
 ];
 
 const Header = () => {

@@ -68,6 +68,16 @@ const Footer = () => {
                   <path className="fill-white group-hover:fill-blue transition-colors" d="M5.08792 2.6001C3.70992 2.6001 2.59192 3.7181 2.59192 5.0961C2.59192 6.4741 3.70992 7.6181 5.08792 7.6181C6.46592 7.6181 7.58392 6.4741 7.58392 5.0961C7.58392 3.7181 6.46592 2.6001 5.08792 2.6001Z" fill="white"/>
                 </svg>
               </button>
+
+              <a
+                href="mailto:info@nurotek.io"
+                className="border border-white-20 rounded-md h-8 w-8 md:h-9 md:w-9 group flex items-center justify-center hover:border-blue transition-colors"
+              >
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path className="stroke-white group-hover:stroke-blue transition-colors" d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect className="stroke-white group-hover:stroke-blue transition-colors" x="3" y="5" width="18" height="14" rx="2" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
