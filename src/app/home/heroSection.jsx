@@ -32,7 +32,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <button
+        {/* <button
           className="rounded-[8px] text-button xl:text-[14px] 3xl:text-[20px] 
           py-3 px-8 xl:py-3.5 xl:px-10 3xl:py-4.5 3xl:px-11 mt-10 3xl:mt-14
           bg-[linear-gradient(105deg,#0BC9FD_-58.58%,#25D7F7_3.62%,#2882F0_65.83%)]
@@ -40,7 +40,7 @@ const HeroSection = () => {
           hover:animate-gradientFlow"
         >
           Launch App
-        </button>
+        </button> */}
       </SiteContainer>
     </section>
   )
