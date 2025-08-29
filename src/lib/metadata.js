@@ -16,14 +16,14 @@ export const metaData = {
     type: "website",
     locale: "en_US",
     url: 'https://nurotek.io/',
-    title: 'NUROTEK',
+    title: 'NUROTEK | AI-Powered Blockchain & Digital Finance Ecosystem',
     description: 'Nurotek powers the future of digital finance with AI, blockchain, and smart payments. Secure, scalable, and rewarding, your gateway to tomorrow’s economy.',
     siteName: 'NUROTEK',
     images: ``,
   },
   twitter: {
     card: "summary_large_image",
-    title: 'NUROTEK',
+    title: 'NUROTEK | AI-Powered Blockchain & Digital Finance Ecosystem',
     description: 'Nurotek powers the future of digital finance with AI, blockchain, and smart payments. Secure, scalable, and rewarding, your gateway to tomorrow’s economy.',
     images: [
       ``,
