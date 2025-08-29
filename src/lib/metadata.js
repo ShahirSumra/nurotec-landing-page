@@ -1,8 +1,8 @@
 
 export const metaData = {
-  metadataBase: new URL("https://spirit-landing-page.vercel.app/"),
-  title: 'NUROTEK',
-  description: 'A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.',
+  metadataBase: new URL("https://nurotek.io/"),
+  title: 'Nurotek | AI-Powered Blockchain & Digital Finance Ecosystem',
+  description: 'Nurotek powers the future of digital finance with AI, blockchain, and smart payments. Secure, scalable, and rewarding, your gateway to tomorrow’s economy.',
   keywords: [],
   authors: [
     {
@@ -15,16 +15,16 @@ export const metaData = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: '',
+    url: 'https://nurotek.io/',
     title: 'NUROTEK',
-    description: 'A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.',
+    description: 'Nurotek powers the future of digital finance with AI, blockchain, and smart payments. Secure, scalable, and rewarding, your gateway to tomorrow’s economy.',
     siteName: 'NUROTEK',
     images: ``,
   },
   twitter: {
     card: "summary_large_image",
     title: 'NUROTEK',
-    description: 'A new economic and AI infrastructure where value and intelligence grow together, borderless, censorship-resistant, and owned by no one.',
+    description: 'Nurotek powers the future of digital finance with AI, blockchain, and smart payments. Secure, scalable, and rewarding, your gateway to tomorrow’s economy.',
     images: [
       ``,
     ],
