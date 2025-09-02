@@ -57,16 +57,28 @@ const NuroAi = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="h-screen flex w-full flex-col lg:flex-row lg:border-y lg:border-white/20"
+      className="h-screen flex w-full flex-col lg:flex-row"
     >
-      <div className="lg:xl:w-[50%] lg:border-r lg:border-white/20 px-4 md:px-[70px] 3xl:px-[140px] py-4 pt-10 lg:py-[60px] flex items-center lg:justify-center">
-        <Image 
+      <div className="lg:xl:w-[50%] px-4 md:px-[70px] 3xl:px-[140px] py-4 pt-10 lg:py-[60px] flex items-center lg:justify-center">
+        {/* <Image 
           src="/images/nuro-ai.jpg"
           height={422}
           width={422}
           alt=""
           className="h-auto w-[240px] md:w-[200px] lg:w-[220px] xl:w-[360px] 2xl:w-[468px] 3xl:w-[540px]"
-        />
+        /> */}
+
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          controls={false}
+          className="h-auto w-[290px] md:w-[300px] lg:w-[520px] xl:w-[560px] 2xl:w-[640px] 3xl:w-[800px]"
+        >
+          <source src="/images/video-3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className="lg:xl:w-[50%] xl:px-[70px] 3xl:px-[140px] px-4 md:px-[70px] pb-4 lg:py-[60px] flex flex-col">

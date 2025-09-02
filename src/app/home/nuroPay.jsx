@@ -57,9 +57,9 @@ const NuroPay = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="h-screen flex w-full flex-col lg:flex-row lg:border-y lg:border-white/20"
+      className="h-screen flex w-full flex-col lg:flex-row"
     >
-      <div className="order-2 lg:order-1 lg:w-[50%] lg:border-r lg:border-white/20 px-4 md:px-[70px] 3xl:px-[140px] pb-4 md:py-6 lg:py-[60px] flex flex-col">
+      <div className="order-2 lg:order-1 lg:w-[50%] px-4 md:px-[70px] 3xl:px-[140px] pb-4 md:py-6 lg:py-[60px] flex flex-col">
         <Image 
           src="/images/nuropay-box.png"
           height={91}
@@ -96,14 +96,26 @@ const NuroPay = () => {
         </div>
       </div>
 
-      <div className="order-1 lg:order-2 lg:w-[50%] px-4 md:px-8 lg:px-[70px] 3xl:px-[140px] py-4 pt-10 md:py-8 lg:py-[60px] flex items-center lg:justify-center">
-        <Image 
+      <div className="relative order-1 lg:order-2 lg:w-[50%] px-4 md:px-8 lg:px-[70px] 3xl:px-[140px] py-4 pt-10 md:py-8 lg:py-[60px] flex items-center lg:justify-start">
+        {/* <Image 
           src="/images/payment-gateway.jpg"
           height={224}
           width={335}
           alt=""
           className="h-auto h-auto w-[240px] md:w-[200px] lg:w-[220px] xl:w-[360px] 2xl:w-[468px] 3xl:w-[540px] shrink-0"
-        />
+        /> */}
+
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          controls={false}
+          className="w-full ml-0 lg:absolute -ml-5 lg:ml-0 lg:-left-20"
+        >
+          <source src="/images/video-1-cropped.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   )

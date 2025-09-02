@@ -54,16 +54,28 @@ const NuroWallet = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="h-screen flex w-full flex-col lg:flex-row lg:border-y lg:border-white/20"
+      className="h-screen flex w-full flex-col lg:flex-row"
     >
-      <div className="lg:xl:w-[50%] lg:border-r lg:border-white/20 px-4 md:px-[70px] 3xl:px-[140px] py-4 lg:py-[60px] flex items-center lg:justify-center">
-        <Image 
+      <div className="lg:xl:w-[50%] px-4 md:px-[70px] 3xl:px-[140px] py-4 lg:py-[60px] flex items-center lg:justify-center">
+        {/* <Image 
           src="/images/wallet.jpg"
           height={468}
           width={468}
           alt=""
           className="h-auto w-[240px] md:w-[200px] lg:w-[220px] xl:w-[360px] 2xl:w-[468px] 3xl:w-[540px]"
-        />
+        /> */}
+
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          controls={false}
+          className="h-auto w-[240px] md:w-[200px] lg:w-[380px] xl:w-[420px] 2xl:w-[520px] 3xl:w-[700px]"
+        >
+          <source src="/images/video-2-cropped.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className="lg:xl:w-[50%] xl:px-[70px] 3xl:px-[140px] px-4 md:px-[70px] pb-4 lg:py-[60px] flex flex-col">
