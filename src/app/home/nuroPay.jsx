@@ -109,8 +109,9 @@ const NuroPay = () => {
           autoPlay 
           muted 
           loop 
-          playsInline 
-          controls={false}
+          playsInline
+webkit-playsinline="true" 
+          
           className="w-full ml-0 lg:absolute -ml-5 lg:ml-0 lg:-left-20"
         >
           <source src="/images/video-1-cropped.mp4" type="video/mp4" />

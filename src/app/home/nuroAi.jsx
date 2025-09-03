@@ -72,8 +72,9 @@ const NuroAi = () => {
           autoPlay 
           muted 
           loop 
-          playsInline 
-          controls={false}
+          playsInline
+webkit-playsinline="true" 
+          
           className="h-auto w-[290px] md:w-[300px] lg:w-[520px] xl:w-[560px] 2xl:w-[640px] 3xl:w-[800px]"
         >
           <source src="/images/video-3.mp4" type="video/mp4" />
