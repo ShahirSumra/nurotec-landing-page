@@ -70,10 +70,12 @@ const NuroWallet = () => {
           muted 
           loop 
           playsInline
-          webkit-playsinline="true" 
+          webkit-playsinline="true"
+          x-webkit-airplay="allow"
+          preload="metadata"
           className="h-auto w-[290px] md:w-[300px] lg:w-[520px] xl:w-[560px] 2xl:w-[640px] 3xl:w-[800px]"
         >
-          <source src="/images/video-2.mp4" type="video/mp4" />
+          <source src="/images/video-2-new.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

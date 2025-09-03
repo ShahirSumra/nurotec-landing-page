@@ -2,50 +2,8 @@
 import Header from "../../components/header";
 import Title from "@/components/title";
 import SiteContainer from "@/components/SiteContainer";
-import  { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
-
-const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // Force mute (Safari sometimes ignores JSX muted)
-    video.muted = true;
-    video.setAttribute("muted", "");
-
-    // Try to play when visible
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      });
-    });
-
-    observer.observe(video);
-
-    // Fallback: play on first user interaction (iOS requires gesture sometimes)
-    const tryPlay = () => {
-      video.play().catch(() => {});
-      document.removeEventListener("touchstart", tryPlay);
-      document.removeEventListener("click", tryPlay);
-    };
-
-    document.addEventListener("touchstart", tryPlay, { once: true });
-    document.addEventListener("click", tryPlay, { once: true });
-
-    return () => {
-      observer.disconnect();
-      document.removeEventListener("touchstart", tryPlay);
-      document.removeEventListener("click", tryPlay);
-    };
-  }, []);
-
 
   return(
     <section id="home" className="relative h-screen flex items-center justify-center">
