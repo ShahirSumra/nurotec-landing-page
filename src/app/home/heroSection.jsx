@@ -6,11 +6,7 @@ import  { useEffect } from 'react';
 
 const HeroSection = () => {
 
-  useEffect(() => { const video = document.querySelector('video'); if (video) { 
-    // Try to play immediately 
-    const playPromise = video.play(); if (playPromise !== undefined) { playPromise.catch(() => { // Autoplay failed, show play button or handle gracefully 
-    console.log('Autoplay prevented'); }); } // Force play on any user interaction 
-    const forcePlay = () => { video.play(); document.removeEventListener('touchstart', forcePlay); document.removeEventListener('click', forcePlay); }; document.addEventListener('touchstart', forcePlay); document.addEventListener('click', forcePlay); } }, []);
+  useEffect(() => { const video = document.querySelector('video'); const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { video.play().catch(() => { }); } }); }); if (video) observer.observe(video); return () => observer.disconnect(); }, []);
 
   return(
     <section id="home" className="relative h-screen flex items-center justify-center">
