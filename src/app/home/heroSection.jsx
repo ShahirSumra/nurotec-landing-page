@@ -9,11 +9,12 @@ const HeroSection = () => {
       <Header />
 
       <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline
-webkit-playsinline="true" 
+        autoplay
+        muted
+        playsinline
+        loop
+        webkit-playsinline="true"
+        x-webkit-airplay="allow"
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src="/images/hero-bg-video.mp4" type="video/mp4" />
