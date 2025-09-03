@@ -17,7 +17,7 @@ const HeroSection = () => {
         preload="metadata"
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/images/hero-bg-video.mp4" type="video/mp4" />
+        <source src="/images/hero-bg-video-muted.mp4" type="video/mp4" />
       </video>
 
       <div className="bg-[linear-gradient(0deg,#000_21.33%,rgba(0,0,0,0)_79.26%)] h-[162px] absolute bottom-0 left-0 w-full z-10" />
