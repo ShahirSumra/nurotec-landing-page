@@ -9,10 +9,10 @@ const HeroSection = () => {
       <Header />
 
       <video 
-        autoplay
+        autoPlay
         muted
-        playsinline
         loop
+        playsInline
         webkit-playsinline="true"
         x-webkit-airplay="allow"
         className="absolute top-0 left-0 w-full h-full object-cover"
