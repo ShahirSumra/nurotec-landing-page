@@ -66,12 +66,11 @@ const NuroWallet = () => {
         /> */}
 
         <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-webkit-playsinline="true" 
-          
+          autoplay="autoPlay" 
+          loop="loop" 
+          muted="muted" 
+          playsinline="playsinline"
+          webkit-playsinline="true" 
           className="h-auto w-[240px] md:w-[200px] lg:w-[380px] xl:w-[420px] 2xl:w-[520px] 3xl:w-[700px]"
         >
           <source src="/images/video-2-cropped.mp4" type="video/mp4" />
