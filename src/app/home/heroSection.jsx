@@ -1,8 +1,16 @@
+'use client';
 import Header from "../../components/header";
 import Title from "@/components/title";
 import SiteContainer from "@/components/SiteContainer";
+import  { useEffect } from 'react';
 
 const HeroSection = () => {
+
+  useEffect(() => { const video = document.querySelector('video'); if (video) { 
+    // Try to play immediately 
+    const playPromise = video.play(); if (playPromise !== undefined) { playPromise.catch(() => { // Autoplay failed, show play button or handle gracefully 
+    console.log('Autoplay prevented'); }); } // Force play on any user interaction 
+    const forcePlay = () => { video.play(); document.removeEventListener('touchstart', forcePlay); document.removeEventListener('click', forcePlay); }; document.addEventListener('touchstart', forcePlay); document.addEventListener('click', forcePlay); } }, []);
 
   return(
     <section id="home" className="relative h-screen flex items-center justify-center">
