@@ -18,17 +18,18 @@ const HeroSection = () => {
         preload="metadata"
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/images/hero-bg-video.mp4" type="video/mp4" />
+        <source src="/images/hero-bg-new.mp4" type="video/mp4" />
       </video>
 
       <div className="bg-[linear-gradient(0deg,#000_21.33%,rgba(0,0,0,0)_79.26%)] h-[162px] absolute bottom-0 left-0 w-full z-10" />
 
       <SiteContainer className="flex items-center justify-center flex-col relative z-10">
-        <div className="xl:max-w-[664px] 3xl:max-w-[725px] mx-auto">
+        <div className="w-full h-[400px] xl:w-[1030px] md:h-[448px] bg-[#000102] rounded-[1030px] blur-[220px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10"></div>
+        <div className="xl:max-w-[700px] 3xl:max-w-[775px] mx-auto relative z-20">
           <Title>
-            Nurotek powers the foundation of tomorrow’s digital economy
+            Nurotek Powers The Foundation Of Tomorrow’s Digital Economy
           </Title>
-          <div className="text-description text-[14px] 2xl:text-[16px] 3xl:text-[18px] text-white-60 text-center mt-5 mx-auto">
+          <div className="text-description font-medium text-[14px] 2xl:text-[16px] 3xl:text-[18px] text-white-60 text-center mt-5 mx-auto">
             Nurotek redefines how value is created across digital finance. It's an innovative AI infrastructure where value and intelligence grow together.
           </div>
         </div>
