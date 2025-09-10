@@ -65,19 +65,23 @@ const NuroWallet = () => {
           className="h-auto w-[240px] md:w-[200px] lg:w-[220px] xl:w-[360px] 2xl:w-[468px] 3xl:w-[540px]"
         /> */}
 
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          webkit-playsinline="true"
-          x-webkit-airplay="allow"
-          preload="metadata"
-          className="h-auto w-[290px] md:w-[300px] lg:w-[520px] xl:w-[560px] 2xl:w-[640px] 3xl:w-[800px]"
-        >
-          <source src="/images/video-2-new.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="relative">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            webkit-playsinline="true"
+            x-webkit-airplay="allow"
+            preload="metadata"
+            className="h-auto w-[290px] md:w-[300px] lg:w-[520px] xl:w-[560px] 2xl:w-[640px] 3xl:w-[800px]"
+          >
+            <source src="/images/nurowallet-new-1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="bg-[linear-gradient(0deg,#000_21.33%,rgba(0,0,0,0)_79.26%)] h-10 md:h-12 absolute bottom-0 left-0 w-full z-10"></div>
+        </div>
       </div>
 
       <div className="lg:xl:w-[50%] xl:px-[70px] 3xl:px-[140px] px-4 md:px-[70px] pb-4 lg:py-[60px] flex flex-col">
